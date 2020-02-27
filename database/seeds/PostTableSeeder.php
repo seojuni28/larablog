@@ -18,6 +18,7 @@ class PostTableSeeder extends Seeder
             'content' => 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod',
             'slug' => 'first-article',
             'photo' => 'content.jpg',
+            'created_at' => date('Y-m-d h:i:s'),
             'user_id' => '1'
         ],[
             'title' => 'Second Article',
@@ -25,6 +26,7 @@ class PostTableSeeder extends Seeder
             'content' => 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod',
             'slug' => 'second-article',
             'photo' => 'content.jpg',
+            'created_at' => date('Y-m-d h:i:s'),
             'user_id' => '1'
         ]];
             Post::insert($posts);

@@ -13,7 +13,8 @@ class CategoryTableSeeder extends Seeder
     {
         DB::table('categories')->insert([
             'name' => 'Comedy',
-            'slug' => 'comedy'
+            'slug' => 'comedy',
+            'created_at' => date('Y-m-d h:i:s')
         ]);
     }
 }

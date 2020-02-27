@@ -18,6 +18,8 @@ class UsersTableSeeder extends Seeder
             'name' => 'admin',
             'email' => 'admin@admin.com',
             'password' => Hash::make('admin1234'),
+            'created_at' => date('Y-m-d h:i:s'),
+            'email_verified_at' => date('Y-m-d h:i:s'),
             'level' => 'admin',
             'photo' => 'profile.jpg'
         ]);
