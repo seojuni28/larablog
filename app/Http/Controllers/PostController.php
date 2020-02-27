@@ -80,7 +80,7 @@ class PostController extends Controller
 
         $images->move('public/uploads/posts/',$newImages);
 
-        return redirect()->route('post.index')->with('alert','' .$post->title. ' Created Successfully');
+        return redirect()->route('list')->with('alert','' .$post->title. ' Created Successfully');
     }
 
     /**
@@ -152,7 +152,7 @@ class PostController extends Controller
 
         $post->tags()->sync($request->tags);
 
-        return redirect()->route('post.index')->with('alert','' .$post->title.' Update Successfully');
+        return redirect()->route('list')->with('alert','' .$post->title.' Update Successfully');
     }
 
     /**
